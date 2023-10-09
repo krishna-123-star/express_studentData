@@ -31,15 +31,15 @@ router.put('/update/:id', (req, res) => {
   
 
   router.get('/list', (req, res) => {
-    stu_Data.forEach((employee) => {
-      console.log(`Roll No: ${employee.roll_no}`);
+    stu_Data.forEach((student) => {
+      console.log(`Roll No: ${student.roll_no}`);
     });
     //first app listening on port 3000
 // Roll No: 18
 // Roll No: 17
   
     // Send the empData as a JSON response
-    res.json(empData);
+    res.json(stu_Data);
   });
 
  
